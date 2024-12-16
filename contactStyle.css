@@ -1,0 +1,131 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  padding: 5px 30px;
+  position: fixed;
+  top: 0;
+  width: 96.8%;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px #333;
+}
+
+header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: gold;
+  transform: scale(1.1);
+  text-shadow: 0 0 10px gold, 0 0 20px gold, 0 0 30px orange;
+  border-bottom: 2px solid gold;
+}
+
+#contact {
+  padding: 100px 10%;
+  text-align: center;
+}
+
+.contact-intro h1 {
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.contact-intro p {
+  font-size: 1.2rem;
+  color: lightgray;
+}
+
+.contact-form {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #333;
+  color: white;
+  border: 1px solid #ff4b2b;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background: #ff4b2b;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #ff416c;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.contact-icons a {
+  font-size: 40px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: gold;
+}
+
+footer {
+  background-color: #1e1e1e;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  border-top: 2px solid #ff4b2b;
+  color: white;
+}
